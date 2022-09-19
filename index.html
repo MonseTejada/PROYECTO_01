@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
+    
 
 <body>
-
+ 
+</head>
+</head>
     <header>
         <!--Logo-->
         <div class="container-fluid">
@@ -21,6 +23,7 @@
                 </div>
             </div>
         </div>
+ 
         <!-- Aqui termina el logo -->
 
 
@@ -50,6 +53,9 @@
             <div id="Barra" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
           </div>
         <br>
+
+        <!-- Formulario -->
+        <form id="formulario" method="POST">
         <div class="container-fluid">
             <div class="row">
                 <hr class="hr2">
@@ -58,27 +64,23 @@
                         compra o no de la propiedad?</p>
                     <div class="row d-flex justify-content-center">
                         <div class="col-2 col-md-2 col-lg-2">
-                            <img class="imagen" id="m" onmouseover="cara()"  onclick="()" src="img/enojado.svg">
+                            <img class="imagen" id="satisfecho" onclick="save(this, 1, 5, null)" ondblclick="" name="satisfecho" onclick="alertOnClick('insatisfecha')" src="img/enojado.svg">
                         </div>
                         <div class="col-2 col-md-2 col-lg-2">
-                            <img class="imagen" onmouseover="cara()" onmouseout="cara()" src="img/feliz.svg">
+                            <img class="imagen" id="feliz"  name="feliz" onclick="alertOnClick('feliz')" src="img/feliz.svg">
+                        </div>
+                        
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <img class="imagen" id="triste" name="triste" onclick="alertOnClick('triste')" src="img/preocupado.svg">
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <img class="imagen" id="enojado" name="enojado" onclick="alertOnClick('enojado')" src="img/triste.svg">
                         </div>
 
                         <div class="col-2 col-md-2 col-lg-2">
-                            <img class="imagen" onmouseover="cara()" src="img/preocupado.svg">
-                        </div>
-
-                        <div class="col-2 col-md-2 col-lg-2">
-                            <img class="imagen" onmouseover="cara()" src="img/triste.svg">
-                        </div>
-
-                        <div class="col-2 col-md-2 col-lg-2">
-                            <img class="imagen" onmouseover="cara()" src="img/feliz.svg">
+                            <img class="imagen" id="neutro"  name="neutro"  onclick="alertOnClick('neutro')"src="img/feliz.svg">
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
 
@@ -483,7 +485,9 @@
             <!-- Aqui termina el menu-->
             <br>
         </div>
-        </div>
+         <button type="submit" class="btn btn-primary  text-uppercase fw-bold">Insertar</button>
+    </form>
+    </div>
     </header>
 
     <footer>
@@ -509,7 +513,8 @@
         </div>
 
     </footer>
-    <script src="js/caritas.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/caritas.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

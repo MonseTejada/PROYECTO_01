@@ -1,23 +1,38 @@
- function cara(){
+/*  function cara(){
     var cara = document.getElementById("Barra").style.width= "10%"
     cara = document.getElementById("Barra").innerHTML = "10%"
 } 
+ */
 
-function cara(){
+
+function alertOnClick(id){
+    
+    for (const othersID of ["insatisfecha", "triste", "feliz", "enojado" , "neutro"]) {
+        if(othersID === id) continue
+        document.getElementById(othersID).style.transform = 'scale(1)'
+     }
+     document.getElementById(id).style.transform = 'scale(1.3)'
+
+
+}
+
+
+
+/* function cara(){
     var cara = document.getElementById("Barra").style.width= "10%"
     cara = document.getElementById("Barra").innerHTML = "10%"
 }
 
-function cara(){
-    var cara = document.getElementById("Barra").style.width= "10%"
+function cara (){
+    var  cara = document.getElementById("Barra").style.width= "10%"
     cara = document.getElementById("Barra").innerHTML = "10%"
 }
-function cara(){
+function cara( ){
     var porcentaje = "10%"
     var cara = document.getElementById("Barra").style.width= "10%"
     cara = document.getElementById("Barra").innerHTML = porcentaje
 }
-function cara(){
+function cara( ){
     var porcentaje = "10%"
     var cara = document.getElementById("Barra").style.width= "10%"
     cara = document.getElementById("Barra").innerHTML = porcentaje
@@ -74,6 +89,6 @@ function cara2(){
     cara2 = document.getElementById("Barra").innerHTML = porcentaje
 }
 
-
+ */
 
   
